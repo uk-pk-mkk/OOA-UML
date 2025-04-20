@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram id="SVZy7e3KvxAr26JR_rqL" name="第 1 页">
+    <mxGraphModel dx="1344" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-50" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="194" y="40" width="150" height="880" as="geometry" />
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-51" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="467" y="40" width="150" height="880" as="geometry" />
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-52" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="A2KTV4Sxpqpugt-6ykPD-51">
+          <mxGeometry x="70" y="107" width="10" height="723" as="geometry" />
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-54" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="258" y="301" width="374" height="472" as="geometry" />
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-55" value="[等候区已满]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="A2KTV4Sxpqpugt-6ykPD-54">
+          <mxGeometry x="30" width="344" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-56" value="[有空位]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="A2KTV4Sxpqpugt-6ykPD-54">
+          <mxGeometry y="103" width="374" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-57" value="opt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="258" y="783" width="299" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-58" value="[用户退出]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="A2KTV4Sxpqpugt-6ykPD-57">
+          <mxGeometry x="30" width="269" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-59" value="选择提交充电请求" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="A2KTV4Sxpqpugt-6ykPD-50" target="A2KTV4Sxpqpugt-6ykPD-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="147" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-60" value="选择模式(快充/慢充)+充电量" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="A2KTV4Sxpqpugt-6ykPD-50" target="A2KTV4Sxpqpugt-6ykPD-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="199" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-61" value="检查等候区容量" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="A2KTV4Sxpqpugt-6ykPD-52" target="A2KTV4Sxpqpugt-6ykPD-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="602" y="251" />
+              <mxPoint x="602" y="281" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-62" value="显示&quot;等候区已满&quot;" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="A2KTV4Sxpqpugt-6ykPD-52" target="A2KTV4Sxpqpugt-6ykPD-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="379" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-63" value="生成排队号(F/T)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="A2KTV4Sxpqpugt-6ykPD-52" target="A2KTV4Sxpqpugt-6ykPD-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="597" y="477" />
+              <mxPoint x="597" y="507" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-64" value="计算预估信息" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="A2KTV4Sxpqpugt-6ykPD-52" target="A2KTV4Sxpqpugt-6ykPD-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="597" y="559" />
+              <mxPoint x="597" y="589" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-65" value="返回排队号+预估信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="A2KTV4Sxpqpugt-6ykPD-52" target="A2KTV4Sxpqpugt-6ykPD-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="641" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-66" value="更新请求状态" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="598" y="693" />
+              <mxPoint x="598" y="723" />
+            </Array>
+            <mxPoint x="546.4473684210525" y="693" as="sourcePoint" />
+            <mxPoint x="546.4473684210525" y="723" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A2KTV4Sxpqpugt-6ykPD-67" value="取消操作" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="A2KTV4Sxpqpugt-6ykPD-50" target="A2KTV4Sxpqpugt-6ykPD-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="861" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

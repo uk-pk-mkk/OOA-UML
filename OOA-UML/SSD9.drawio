@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="2BHJ6eeiq_Yv8pMzbxQ_">
+    <mxGraphModel dx="704" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-1" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="229" y="30" width="150" height="810" as="geometry" />
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-2" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="429" y="30" width="150" height="810" as="geometry" />
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-4" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="SvPFumvQjwCVUMwXMOJ9-2">
+          <mxGeometry x="70" y="107" width="10" height="663" as="geometry" />
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-5" value="loop" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="250" y="157" width="349" height="261" as="geometry" />
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-6" value="[对每个匹配充电桩]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="SvPFumvQjwCVUMwXMOJ9-5">
+          <mxGeometry x="45.11764705882352" width="266.88235294117646" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-7" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="293" y="510" width="301" height="278" as="geometry" />
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-8" value="[所有队列满]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="SvPFumvQjwCVUMwXMOJ9-7">
+          <mxGeometry x="30" width="271" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-9" value="[有空位]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="SvPFumvQjwCVUMwXMOJ9-7">
+          <mxGeometry y="103" width="301" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-10" value="获取充电桩队列" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="411" y="144" />
+            </Array>
+            <mxPoint x="303.54761904761915" y="144" as="sourcePoint" />
+            <mxPoint x="499" y="144" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-11" value="计算等待时间" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="559" y="256" />
+              <mxPoint x="559" y="286" />
+            </Array>
+            <mxPoint x="509" y="256" as="sourcePoint" />
+            <mxPoint x="509" y="286" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-12" value="计算自身充电时间" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="559" y="338" />
+              <mxPoint x="559" y="368" />
+            </Array>
+            <mxPoint x="509" y="338" as="sourcePoint" />
+            <mxPoint x="509" y="368" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-13" value="选择最优队列" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="559" y="460" />
+              <mxPoint x="559" y="490" />
+            </Array>
+            <mxPoint x="509" y="460" as="sourcePoint" />
+            <mxPoint x="509" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-14" value="保持等候状态" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="SvPFumvQjwCVUMwXMOJ9-4" target="SvPFumvQjwCVUMwXMOJ9-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="588" />
+            </Array>
+            <mxPoint x="504" y="588" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-15" value="分配车辆至队列" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="SvPFumvQjwCVUMwXMOJ9-4" target="SvPFumvQjwCVUMwXMOJ9-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="559" y="686" />
+              <mxPoint x="559" y="716" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SvPFumvQjwCVUMwXMOJ9-16" value="返回更新结果" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="SvPFumvQjwCVUMwXMOJ9-4" target="SvPFumvQjwCVUMwXMOJ9-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="768" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

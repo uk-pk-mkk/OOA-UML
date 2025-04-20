@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="2BHJ6eeiq_Yv8pMzbxQ_">
+    <mxGraphModel dx="528" dy="-830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fetUC64O11P7wI_gAYCw-24" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="168" y="1200" width="150" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-25" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="474" y="1200" width="150" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-26" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="fetUC64O11P7wI_gAYCw-25">
+          <mxGeometry x="70" width="10" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-69" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="fetUC64O11P7wI_gAYCw-25">
+          <mxGeometry x="70" y="100" width="10" height="930" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-27" value="loop" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="260" y="1845" width="379" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-28" value="[最多3次重试]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="fetUC64O11P7wI_gAYCw-27">
+          <mxGeometry x="89.17647058823529" width="289.82352941176475" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-29" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="232" y="1537" width="448" height="549" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-30" value="[详单推送成功]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="fetUC64O11P7wI_gAYCw-29">
+          <mxGeometry x="32.23021582733812" width="415.7697841726618" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-31" value="[详单推送失败]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="fetUC64O11P7wI_gAYCw-29">
+          <mxGeometry y="185" width="447.99999999999994" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-34" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="222" y="1327" width="468" height="883" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-35" value="[正常请求]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="fetUC64O11P7wI_gAYCw-34">
+          <mxGeometry x="32.12814645308924" width="435.8718535469107" height="16.707663197729424" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-36" value="[结束充电请求故障]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="fetUC64O11P7wI_gAYCw-34">
+          <mxGeometry y="715.0879848628192" width="468" height="2.5061494796594133" as="geometry" />
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-37" value="选择结束充电" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="fetUC64O11P7wI_gAYCw-24" target="fetUC64O11P7wI_gAYCw-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="403" y="1307" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-38" value="停止计费" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="609" y="1405" />
+              <mxPoint x="609" y="1435" />
+            </Array>
+            <mxPoint x="553.6304347826087" y="1405" as="sourcePoint" />
+            <mxPoint x="553.6304347826087" y="1435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-39" value="计算最终费用" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="609" y="1487" />
+              <mxPoint x="609" y="1517" />
+            </Array>
+            <mxPoint x="553.6304347826087" y="1487" as="sourcePoint" />
+            <mxPoint x="553.6304347826087" y="1517" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-40" value="生成详单" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="609" y="1560" />
+              <mxPoint x="609" y="1590" />
+            </Array>
+            <mxPoint x="553.6304347826087" y="1560" as="sourcePoint" />
+            <mxPoint x="553.6304347826087" y="1590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-41" value="显示详单" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="406" y="1623" />
+            </Array>
+            <mxPoint x="544" y="1623" as="sourcePoint" />
+            <mxPoint x="242.78571428571445" y="1623" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-42" value="记录异常" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="1795" />
+              <mxPoint x="610" y="1825" />
+            </Array>
+            <mxPoint x="554.2500000000002" y="1795" as="sourcePoint" />
+            <mxPoint x="554.2500000000002" y="1825" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-43" value="重新推送" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="609" y="1944" />
+              <mxPoint x="609" y="1974" />
+            </Array>
+            <mxPoint x="553.2500000000002" y="1944" as="sourcePoint" />
+            <mxPoint x="553.2500000000002" y="1974" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-44" value="显示&quot;详单生成失败，请稍后查看&quot;" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="fetUC64O11P7wI_gAYCw-69" target="fetUC64O11P7wI_gAYCw-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="406" y="2066" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-46" value="显示&quot;请求失败，请重试&quot;" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="406" y="2170" />
+            </Array>
+            <mxPoint x="544" y="2170" as="sourcePoint" />
+            <mxPoint x="242.63043478260875" y="2170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fetUC64O11P7wI_gAYCw-71" value="更新充电桩状态为“空闲”" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0711" y="11" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="609.37" y="1650" />
+              <mxPoint x="609.37" y="1680" />
+            </Array>
+            <mxPoint x="554.0004347826087" y="1650" as="sourcePoint" />
+            <mxPoint x="554.0004347826087" y="1680" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

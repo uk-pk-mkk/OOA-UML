@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="3QJdQ5_wCCXxDy9yjB_w">
+    <mxGraphModel dx="1232" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FkP6Wfw0DYKylJePpBus-1" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="190" y="20" width="150" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-2" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="390" y="20" width="150" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-3" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="FkP6Wfw0DYKylJePpBus-2">
+          <mxGeometry x="70" y="100" width="10" height="723" as="geometry" />
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-4" value="loop" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="175" y="295" width="380" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-5" value="[更新所有车辆]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="FkP6Wfw0DYKylJePpBus-4">
+          <mxGeometry x="89.41176470588235" width="290.5882352941176" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-6" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="140" y="167" width="450" height="549" as="geometry" />
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-7" value="[常规调度]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="FkP6Wfw0DYKylJePpBus-6">
+          <mxGeometry x="42.721518987341774" width="407.27848101265823" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-8" value="[队列已满]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="FkP6Wfw0DYKylJePpBus-6">
+          <mxGeometry y="374" width="450.00000000000006" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-11" value="调度请求" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="FkP6Wfw0DYKylJePpBus-1" target="FkP6Wfw0DYKylJePpBus-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="372" y="127" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-12" value="按策略分配车辆" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FkP6Wfw0DYKylJePpBus-3" target="FkP6Wfw0DYKylJePpBus-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="245" />
+              <mxPoint x="525" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-13" value="重新计算等待时间" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FkP6Wfw0DYKylJePpBus-3" target="FkP6Wfw0DYKylJePpBus-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="394" />
+              <mxPoint x="525" y="424" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-14" value="新队列数据" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="FkP6Wfw0DYKylJePpBus-3" target="FkP6Wfw0DYKylJePpBus-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="516" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-15" value="暂停调度" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FkP6Wfw0DYKylJePpBus-3" target="FkP6Wfw0DYKylJePpBus-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="614" />
+              <mxPoint x="525" y="644" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-16" value="队列满警告" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="FkP6Wfw0DYKylJePpBus-3" target="FkP6Wfw0DYKylJePpBus-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="696" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-17" value="同步数据至客户端" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FkP6Wfw0DYKylJePpBus-3" target="FkP6Wfw0DYKylJePpBus-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="768" />
+              <mxPoint x="525" y="798" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FkP6Wfw0DYKylJePpBus-18" value="更新完成确认" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="FkP6Wfw0DYKylJePpBus-3" target="FkP6Wfw0DYKylJePpBus-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

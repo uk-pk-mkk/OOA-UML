@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram id="8OSe9Qg1qau_7uC2HYGL" name="第 1 页">
+    <mxGraphModel dx="704" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-14" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="231" y="10" width="150" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-15" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="431" y="10" width="150" height="860" as="geometry" />
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-16" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="k2D_bsrpHV9lsUCgeDoT-15">
+          <mxGeometry x="70" y="107" width="10" height="712" as="geometry" />
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-17" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="210" y="137" width="400" height="532" as="geometry" />
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-18" value="[在等候区]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="k2D_bsrpHV9lsUCgeDoT-17">
+          <mxGeometry x="70.58823529411765" width="329.4117647058823" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-19" value="[在充电区]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="k2D_bsrpHV9lsUCgeDoT-17">
+          <mxGeometry y="215" width="400" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-20" value="opt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="295" y="679" width="226" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-21" value="[用户退出]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="k2D_bsrpHV9lsUCgeDoT-20">
+          <mxGeometry x="30" width="196" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-22" value="选择取消充电" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="k2D_bsrpHV9lsUCgeDoT-14" target="k2D_bsrpHV9lsUCgeDoT-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="413" y="117" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-23" value="从队列移除车辆" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="k2D_bsrpHV9lsUCgeDoT-16" target="k2D_bsrpHV9lsUCgeDoT-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="561" y="215" />
+              <mxPoint x="561" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-24" value="前移后续车辆" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="k2D_bsrpHV9lsUCgeDoT-16" target="k2D_bsrpHV9lsUCgeDoT-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="561" y="297" />
+              <mxPoint x="561" y="327" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-25" value="停止计费" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="k2D_bsrpHV9lsUCgeDoT-16" target="k2D_bsrpHV9lsUCgeDoT-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="561" y="425" />
+              <mxPoint x="561" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-26" value="生成详单" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="k2D_bsrpHV9lsUCgeDoT-16" target="k2D_bsrpHV9lsUCgeDoT-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="561" y="507" />
+              <mxPoint x="561" y="537" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-27" value="释放充电桩" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="k2D_bsrpHV9lsUCgeDoT-16" target="k2D_bsrpHV9lsUCgeDoT-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="561" y="589" />
+              <mxPoint x="561" y="619" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-28" value="取消操作" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="k2D_bsrpHV9lsUCgeDoT-14" target="k2D_bsrpHV9lsUCgeDoT-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="413" y="757" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2D_bsrpHV9lsUCgeDoT-29" value="显示&quot;充电已取消&quot;" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="k2D_bsrpHV9lsUCgeDoT-16" target="k2D_bsrpHV9lsUCgeDoT-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="416" y="819" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

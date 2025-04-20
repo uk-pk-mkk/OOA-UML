@@ -1,0 +1,74 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="2BHJ6eeiq_Yv8pMzbxQ_">
+    <mxGraphModel dx="739" dy="474" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SDFwREo1xOkK1pabS7jf-1" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="150" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-2" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="150" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-3" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="SDFwREo1xOkK1pabS7jf-2">
+          <mxGeometry x="70" y="107" width="10" height="452" as="geometry" />
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-5" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="50" y="229" width="335" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-6" value="[等候区满]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="SDFwREo1xOkK1pabS7jf-5">
+          <mxGeometry x="33.38870431893688" width="301.61129568106315" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-7" value="[有空位]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="SDFwREo1xOkK1pabS7jf-5">
+          <mxGeometry y="103" width="335" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-8" value="接收充电请求" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="SDFwREo1xOkK1pabS7jf-1" target="SDFwREo1xOkK1pabS7jf-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="202" y="127" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-9" value="识别请求类型(快充/慢充)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="SDFwREo1xOkK1pabS7jf-3" target="SDFwREo1xOkK1pabS7jf-3">
+          <mxGeometry x="-0.0571" y="15" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="355" y="179" />
+              <mxPoint x="355" y="209" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-10" value="返回拒绝" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="SDFwREo1xOkK1pabS7jf-3" target="SDFwREo1xOkK1pabS7jf-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="307" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-11" value="生成F/T排队号" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="SDFwREo1xOkK1pabS7jf-3" target="SDFwREo1xOkK1pabS7jf-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="405" />
+              <mxPoint x="350" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-12" value="存储请求信息" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="SDFwREo1xOkK1pabS7jf-3" target="SDFwREo1xOkK1pabS7jf-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="487" />
+              <mxPoint x="350" y="517" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDFwREo1xOkK1pabS7jf-13" value="返回排队号" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="SDFwREo1xOkK1pabS7jf-3" target="SDFwREo1xOkK1pabS7jf-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="569" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

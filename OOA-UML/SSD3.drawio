@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram id="EkQ1HVpD4olreowwl6UP" name="第 1 页">
+    <mxGraphModel dx="643" dy="-757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-1" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1190" width="150" height="910" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-2" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1190" width="150" height="910" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-3" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="ylalbW4BF5j5j2TKgNKa-2">
+          <mxGeometry x="70" y="107" width="10" height="753" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-4" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="270" y="1317" width="327" height="472" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-5" value="[修改充电量]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="ylalbW4BF5j5j2TKgNKa-4">
+          <mxGeometry x="32.37623762376238" width="294.62376237623766" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-6" value="[修改模式]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="ylalbW4BF5j5j2TKgNKa-4">
+          <mxGeometry y="185" width="327" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-7" value="opt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="294" y="1851" width="222" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-8" value="[在充电区修改]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="ylalbW4BF5j5j2TKgNKa-7">
+          <mxGeometry x="30" width="192" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-9" value="opt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="294" y="1959" width="222" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-10" value="[用户退出]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="ylalbW4BF5j5j2TKgNKa-9">
+          <mxGeometry x="30" width="192" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-11" value="选择修改请求" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-1" target="ylalbW4BF5j5j2TKgNKa-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="1297" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-12" value="调整充电量" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-1" target="ylalbW4BF5j5j2TKgNKa-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="1395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-13" value="更新请求(排队号不变)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-3" target="ylalbW4BF5j5j2TKgNKa-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="1447" />
+              <mxPoint x="560" y="1477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-14" value="切换快充/慢充" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-1" target="ylalbW4BF5j5j2TKgNKa-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="1575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-15" value="重新生成排队号" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-3" target="ylalbW4BF5j5j2TKgNKa-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="1627" />
+              <mxPoint x="560" y="1657" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-16" value="移至新队列末尾" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-3" target="ylalbW4BF5j5j2TKgNKa-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="1709" />
+              <mxPoint x="560" y="1739" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-17" value="返回更新结果" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-3" target="ylalbW4BF5j5j2TKgNKa-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="1831" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-18" value="显示错误提示" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-3" target="ylalbW4BF5j5j2TKgNKa-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="417" y="1929" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ylalbW4BF5j5j2TKgNKa-19" value="取消操作" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="ylalbW4BF5j5j2TKgNKa-1" target="ylalbW4BF5j5j2TKgNKa-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="2037" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

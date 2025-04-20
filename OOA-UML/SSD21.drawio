@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="5hclALBQlh2AVa7bqb6c">
+    <mxGraphModel dx="869" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oUzpK6lNwrvoFPWii74J-1" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="224" y="40" width="150" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-2" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="434" y="40" width="150" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-3" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="oUzpK6lNwrvoFPWii74J-2">
+          <mxGeometry x="70" y="106" width="10" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-4" value="loop" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="288" y="167" width="241" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-5" value="[每5秒]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="oUzpK6lNwrvoFPWii74J-4">
+          <mxGeometry x="40" width="201" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-6" value="opt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="254" y="295" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-7" value="[检测异常]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="oUzpK6lNwrvoFPWii74J-6">
+          <mxGeometry x="33.22784810126582" width="316.77215189873414" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-10" value="请求监控数据" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="oUzpK6lNwrvoFPWii74J-1" target="oUzpK6lNwrvoFPWii74J-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="411" y="147" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-11" value="推送电压/电流/功率" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="oUzpK6lNwrvoFPWii74J-3" target="oUzpK6lNwrvoFPWii74J-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-12" value="标记异常状态" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="oUzpK6lNwrvoFPWii74J-3" target="oUzpK6lNwrvoFPWii74J-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="569" y="373" />
+              <mxPoint x="569" y="403" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-13" value="触发Sf_002" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="oUzpK6lNwrvoFPWii74J-3" target="oUzpK6lNwrvoFPWii74J-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oUzpK6lNwrvoFPWii74J-14" value="充电完成数据包" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="oUzpK6lNwrvoFPWii74J-3" target="oUzpK6lNwrvoFPWii74J-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="527" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

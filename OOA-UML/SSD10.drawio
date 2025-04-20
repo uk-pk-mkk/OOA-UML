@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="2BHJ6eeiq_Yv8pMzbxQ_">
+    <mxGraphModel dx="1056" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BhBcRMhQt_WMe206wYZs-131" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="166" y="20" width="150" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-132" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="BhBcRMhQt_WMe206wYZs-131">
+          <mxGeometry x="70" width="10" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-133" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="366" y="20" width="150" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-136" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="566" y="20" width="150" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-155" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="BhBcRMhQt_WMe206wYZs-136">
+          <mxGeometry x="70" y="100" width="10" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-137" value="opt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="156" y="575" width="509" height="336" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-138" value="[充电桩故障/用户取消]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="BhBcRMhQt_WMe206wYZs-137">
+          <mxGeometry x="-11.29" width="471.29" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-139" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="110" y="193" width="565" height="728" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-140" value="[充电正常结束]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="BhBcRMhQt_WMe206wYZs-139">
+          <mxGeometry x="10.900685615235838" width="532.9155672274193" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-141" value="[出现异常情况]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="BhBcRMhQt_WMe206wYZs-139">
+          <mxGeometry x="0.6130410071818543" y="340" width="564.3869589928182" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-142" value="loop" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="80" y="147" width="615" height="784" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-143" value="[持续监控]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="BhBcRMhQt_WMe206wYZs-142">
+          <mxGeometry x="27.25207989953693" width="570.9139784946237" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-144" value="监听充电状态" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-155">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="452" y="127" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-145" value="检测到充电完成" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-155">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="452" y="271" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-146" value="计算费用(充电量×电价+服务费)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-131">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="296" y="323" />
+              <mxPoint x="296" y="353" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-147" value="生成充电详单" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-155">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="452" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-148" value="推送详单数据" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-133">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="457" />
+            </Array>
+            <mxPoint x="436" y="457" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-149" value="确认接收详单" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-133" target="BhBcRMhQt_WMe206wYZs-131">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="509" />
+            </Array>
+            <mxPoint x="436" y="509" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-150" value="检测异常事件" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-155">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="452" y="653" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-151" value="按中断时电量计算费用" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-131">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="296" y="705" />
+              <mxPoint x="296" y="735" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-152" value="生成异常详单" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-155">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="452" y="787" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-153" value="推送异常通知" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-131" target="BhBcRMhQt_WMe206wYZs-133">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="839" />
+            </Array>
+            <mxPoint x="436" y="839" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhBcRMhQt_WMe206wYZs-154" value="确认异常处理" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="BhBcRMhQt_WMe206wYZs-133" target="BhBcRMhQt_WMe206wYZs-131">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="891" />
+            </Array>
+            <mxPoint x="436" y="891" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

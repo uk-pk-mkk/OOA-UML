@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="5hclALBQlh2AVa7bqb6c">
+    <mxGraphModel dx="1137" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XT9HIqiqqi23oMV64EKD-1" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="229" y="40" width="150" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-2" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="429" y="40" width="150" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-3" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="XT9HIqiqqi23oMV64EKD-2">
+          <mxGeometry x="70" y="106" width="10" height="482" as="geometry" />
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-4" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="249" y="351" width="350" height="226" as="geometry" />
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-5" value="[故障恢复]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="XT9HIqiqqi23oMV64EKD-4">
+          <mxGeometry x="34.31372549019608" width="315.68627450980387" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-6" value="[持续故障]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="XT9HIqiqqi23oMV64EKD-4">
+          <mxGeometry y="133" width="350" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-9" value="故障检测信号" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="XT9HIqiqqi23oMV64EKD-1" target="XT9HIqiqqi23oMV64EKD-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="411" y="147" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-10" value="停止当前计费" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="XT9HIqiqqi23oMV64EKD-3" target="XT9HIqiqqi23oMV64EKD-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="564" y="199" />
+              <mxPoint x="564" y="229" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-11" value="生成中断详单" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="XT9HIqiqqi23oMV64EKD-3" target="XT9HIqiqqi23oMV64EKD-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="564" y="281" />
+              <mxPoint x="564" y="311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-12" value="重启充电桩" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="XT9HIqiqqi23oMV64EKD-3" target="XT9HIqiqqi23oMV64EKD-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="564" y="429" />
+              <mxPoint x="564" y="459" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-13" value="等待人工处理" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="XT9HIqiqqi23oMV64EKD-3" target="XT9HIqiqqi23oMV64EKD-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="557" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XT9HIqiqqi23oMV64EKD-14" value="状态=故障" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="XT9HIqiqqi23oMV64EKD-3" target="XT9HIqiqqi23oMV64EKD-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="629" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

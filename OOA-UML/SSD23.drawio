@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="5hclALBQlh2AVa7bqb6c">
+    <mxGraphModel dx="1056" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-1" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="233" y="30" width="150" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-2" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="433" y="30" width="150" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-3" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="zFOE4SZud8GoZrgH-PJ1-2">
+          <mxGeometry x="70" y="107" width="10" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-4" value="loop" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="223" y="239" width="380" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-5" value="[处理每个车辆]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="zFOE4SZud8GoZrgH-PJ1-4">
+          <mxGeometry x="89.41176470588235" width="290.5882352941177" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-6" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="233" y="448" width="370" height="277" as="geometry" />
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-7" value="[无空闲桩]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="zFOE4SZud8GoZrgH-PJ1-6">
+          <mxGeometry x="36.27450980392157" width="333.7254901960784" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-8" value="[正常分配]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="zFOE4SZud8GoZrgH-PJ1-6">
+          <mxGeometry y="124" width="370" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-11" value="故障队列数据" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="zFOE4SZud8GoZrgH-PJ1-1" target="zFOE4SZud8GoZrgH-PJ1-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="137" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-12" value="暂停叫号服务" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="zFOE4SZud8GoZrgH-PJ1-3" target="zFOE4SZud8GoZrgH-PJ1-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="568" y="189" />
+              <mxPoint x="568" y="219" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-13" value="重新分配队列" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="zFOE4SZud8GoZrgH-PJ1-3" target="zFOE4SZud8GoZrgH-PJ1-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="568" y="338" />
+              <mxPoint x="568" y="368" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-14" value="请求人工调度" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="zFOE4SZud8GoZrgH-PJ1-3" target="zFOE4SZud8GoZrgH-PJ1-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="418" y="547" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-15" value="更新等候队列" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="zFOE4SZud8GoZrgH-PJ1-3" target="zFOE4SZud8GoZrgH-PJ1-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="568" y="645" />
+              <mxPoint x="568" y="675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zFOE4SZud8GoZrgH-PJ1-16" value="恢复叫号服务" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="zFOE4SZud8GoZrgH-PJ1-3" target="zFOE4SZud8GoZrgH-PJ1-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="418" y="777" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

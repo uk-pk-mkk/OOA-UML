@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="5hclALBQlh2AVa7bqb6c">
+    <mxGraphModel dx="869" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NRHFpGLg0m9xr0cngciH-17" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="138" y="50" width="150" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-18" value="ChargingPile" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="338" y="50" width="150" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-19" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="538" y="50" width="150" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-20" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="NRHFpGLg0m9xr0cngciH-19">
+          <mxGeometry x="70" y="107" width="10" height="474" as="geometry" />
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-21" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="170" y="249" width="463" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-22" value="[可执行指令]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="NRHFpGLg0m9xr0cngciH-21">
+          <mxGeometry x="32.22737819025522" width="430.7726218097448" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-23" value="[不可执行]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="NRHFpGLg0m9xr0cngciH-21">
+          <mxGeometry y="185" width="463" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-26" value="调度指令" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="NRHFpGLg0m9xr0cngciH-17" target="NRHFpGLg0m9xr0cngciH-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="157" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-27" value="下发指令" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="NRHFpGLg0m9xr0cngciH-20" target="NRHFpGLg0m9xr0cngciH-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="209" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-28" value="调整状态" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="NRHFpGLg0m9xr0cngciH-18" target="NRHFpGLg0m9xr0cngciH-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="468" y="327" />
+              <mxPoint x="468" y="357" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-29" value="执行成功" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="NRHFpGLg0m9xr0cngciH-18" target="NRHFpGLg0m9xr0cngciH-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="522" y="409" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-30" value="错误代码" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="NRHFpGLg0m9xr0cngciH-18" target="NRHFpGLg0m9xr0cngciH-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="522" y="507" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-31" value="异常通知" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="NRHFpGLg0m9xr0cngciH-20" target="NRHFpGLg0m9xr0cngciH-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="423" y="559" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NRHFpGLg0m9xr0cngciH-32" value="指令状态反馈" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="NRHFpGLg0m9xr0cngciH-20" target="NRHFpGLg0m9xr0cngciH-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="423" y="631" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

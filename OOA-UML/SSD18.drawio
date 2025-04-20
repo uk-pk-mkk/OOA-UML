@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="第 1 页" id="5hclALBQlh2AVa7bqb6c">
+    <mxGraphModel dx="869" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-1" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="260" y="50" width="150" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-2" value="System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="460" y="50" width="150" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-3" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="W_x0N6x7ZWJ880nAGGQ7-2">
+          <mxGeometry x="70" y="106" width="10" height="538" as="geometry" />
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-4" value="loop" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="220" y="177" width="418" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-5" value="[计算所有方案]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="W_x0N6x7ZWJ880nAGGQ7-4">
+          <mxGeometry x="90.3783783783784" width="327.62162162162167" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-6" value="alt" style="shape=umlFrame;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="324" y="447" width="231" height="196" as="geometry" />
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-7" value="[异常中断]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="W_x0N6x7ZWJ880nAGGQ7-6">
+          <mxGeometry x="30" width="201" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-8" value="[正常执行]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="W_x0N6x7ZWJ880nAGGQ7-6">
+          <mxGeometry y="103" width="231" height="3" as="geometry" />
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-11" value="检测空闲桩/队列" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="W_x0N6x7ZWJ880nAGGQ7-1" target="W_x0N6x7ZWJ880nAGGQ7-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="442" y="157" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-12" value="计算总时长(等待+充电)" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="W_x0N6x7ZWJ880nAGGQ7-3" target="W_x0N6x7ZWJ880nAGGQ7-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="595" y="255" />
+              <mxPoint x="595" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-13" value="选择最优方案" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="W_x0N6x7ZWJ880nAGGQ7-3" target="W_x0N6x7ZWJ880nAGGQ7-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="595" y="377" />
+              <mxPoint x="595" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-14" value="触发故障上报" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="W_x0N6x7ZWJ880nAGGQ7-3" target="W_x0N6x7ZWJ880nAGGQ7-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-15" value="最优策略详情" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="W_x0N6x7ZWJ880nAGGQ7-3" target="W_x0N6x7ZWJ880nAGGQ7-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="623" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W_x0N6x7ZWJ880nAGGQ7-16" value="准备执行确认" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="W_x0N6x7ZWJ880nAGGQ7-3" target="W_x0N6x7ZWJ880nAGGQ7-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
